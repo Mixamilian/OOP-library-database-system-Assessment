@@ -7,7 +7,7 @@ public class member_management{
     private String MembershipType;
 
     //constructor
-    public member_management(int memberID, STRING Name, STRING Email, STRING MembershipType){
+    public member_management(int memberID, String Name, String Email, String MembershipType){
         this.memberID = memberID;
         this.Name = Name;
         this.Email = Email;
@@ -15,34 +15,34 @@ public class member_management{
     }
 
     //Getters
-    public getName(){
+    public String getName(){
         return this.Name;
     }
 
-    public getMemberID(){
+    public int getMemberID(){
         return this.memberID;
     }
 
     //setters
 
-    public setMemberID(int newMemberID){
-        this.memberID = newMemberID
+    public void setMemberID(int newMemberID){
+        this.memberID = newMemberID;
     }
 
-    public setName(STRING newName){
+    public void setName(String newName){
         this.Name = newName;
     }
 
-    public setEmail(STRING newEmail){
+    public void setEmail(String newEmail){
         this.Email = newEmail;
     }
 
-    public setMembershipType(STRING newMembershipType){
+    public void setMembershipType(String newMembershipType){
         this.MembershipType = newMembershipType;
     }
 
     //delete function
-    public deleteMember(){
+    public void deleteMember(){
         
     }
 }

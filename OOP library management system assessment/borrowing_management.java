@@ -6,10 +6,10 @@ public class borrowing_management{
     private int memberID;
     private int borrowDate;
     private int dueDate;
-    private STRING returnStatus;
+    private String returnStatus;
 
     //constructor
-    public borrowing_management(int recordID, int bookID, int memberID, int borrowDate, int dueDate, STRING returnStatus){
+    public borrowing_management(int recordID, int bookID, int memberID, int borrowDate, int dueDate, String returnStatus){
         this.recordID = recordID;
         this.bookID = bookID;
         this.memberID = memberID;
@@ -19,21 +19,21 @@ public class borrowing_management{
     }
 
     //Getters
-    public getMemberID(){
+    public int getMemberID(){
         return this.memberID;
     }
 
-    public getBookID(){
+    public int getBookID(){
         return this.bookID;
     }
 
     //Setter
-    public setReturnStatus(STRING newReturnStatus){
+    public void setReturnStatus(String newReturnStatus){
         this.returnStatus = newReturnStatus;
     }
 
     //delete function
-    public deleteBorrowingRecord(){
+    public void deleteBorrowingRecord(){
         
     }
 }
